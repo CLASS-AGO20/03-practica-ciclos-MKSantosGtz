@@ -9,12 +9,14 @@ export default class App {
     return resultado;
   }
   convertirAString(numero) {
-    let i = numero;
-    let asterisco = "*";
+    let s = "";
+    let i = 1;
+
     while (i <= numero) {
-      asterisco++;
+      s = s + "*";
+      i = i + 1;
     }
-    return asterisco;
+    return s;
   }
 }
 
